@@ -70,6 +70,8 @@ Para activar las zonas horarias, sigue los siguientes pasos:
    ```bash
    FLUSH PRIVILEGES;
 OBS: 'glpi' este seria el usuario de la base de datos que le pusieron en glpi pueden cambiarlo con el usuario que le colocaron ustedes
+
+
 4.Guarda los cambios y sal del cliente de MySQL/MariaDB.
 
 5.Accede al contenedor de GLPI
