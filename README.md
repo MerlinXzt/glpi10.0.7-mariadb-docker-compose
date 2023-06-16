@@ -2,7 +2,8 @@
 Repositorio para la configuración de un entorno Docker con GLPI 10.0.7 y MariaDB 10.0.7
 # Repositorio de Docker para GLPI
 
-Este repositorio contiene archivos de configuración para crear un entorno de Docker con GLPI (Gestionnaire Libre de Parc Informatique). GLPI es un sistema de gestión de activos y tickets de ayuda de código abierto.
+Este repositorio contiene archivos de configuración para crear un entorno de Docker con GLPI.
+GLPI es un sistema de gestión de activos y tickets de ayuda de código abierto.
 
 ## Requisitos previos
 
