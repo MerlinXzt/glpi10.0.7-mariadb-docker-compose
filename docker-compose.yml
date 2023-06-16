@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  db:
+    image: mariadb:latest
+    restart: always
+    environment:
+      MYSQL_DATABASE: glpi_db
+      MYSQL_USER: glpi
+      MYSQL_PASSWORD: glpi_password
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    volumes:
+      - mariadb_data:/var/lib/mysql
+    networks:
+      - glpi-network
+
+  glpi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+    restart: always
+    ports:
+      - 80:80
+    volumes:
+      - glpi-files:/var/glpi-files
+      - glpi-config:/var/glpi-config
+    networks:
+      - glpi-network
+
+networks:
+  glpi-network:
+
+volumes:
+  mariadb_data:
+  glpi-files:
+  glpi-config:
+
