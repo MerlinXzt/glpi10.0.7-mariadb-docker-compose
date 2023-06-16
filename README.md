@@ -70,7 +70,8 @@ OBS: 'glpi' este seria el usuario de la base de datos que le pusieron en glpi pu
 4.Guarda los cambios y sal del cliente de MySQL/MariaDB.
 
 5.Accede al contenedor de GLPI
-
+   docker exec -it <nombre_del_contenedor> /bin/bash
+   
 6.Ejecuta el siguiente comando para habilitar las zonas horarias en la base de datos:
 php bin/console database:enable_timezones
 Obs: en este caso el comando debe ejecutarce dentro de la carpeta /var/www/html/public
