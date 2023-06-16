@@ -59,28 +59,28 @@ Al ejecutar la aplicación, es posible que se muestre el siguiente error: "Zona 
 Para activar las zonas horarias, sigue los siguientes pasos:
 
 1. Accede al contenedor de la base de datos de MySQL/MariaDB.
-   ```bash
-   docker exec -it <nombre_del_contenedor> mysql -uroot -p
+```bash
+docker exec -it <nombre_del_contenedor> mysql -uroot -p
+```
 2.Inicia sesión con las credenciales de administrador de la base de datos.
 
 3.Ejecuta los siguientes comandos en el cliente de MySQL/MariaDB:
- 
-   ```bash
-   GRANT ALL PRIVILEGES ON *.* TO 'glpi'@'%' WITH GRANT OPTION;
-   ```bash
-   FLUSH PRIVILEGES;
+ ```bash
+GRANT ALL PRIVILEGES ON *.* TO 'glpi'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+```
 OBS: 'glpi' este seria el usuario de la base de datos que le pusieron en glpi pueden cambiarlo con el usuario que le colocaron ustedes
-
 
 4.Guarda los cambios y sal del cliente de MySQL/MariaDB.
 
 5.Accede al contenedor de GLPI
-   ```bash
-   docker exec -it <nombre_del_contenedor> /bin/bash
-   
+```bash
+docker exec -it <nombre_del_contenedor> /bin/bash
+```   
 6.Ejecuta el siguiente comando para habilitar las zonas horarias en la base de datos:
-   ```bash
-   php bin/console database:enable_timezones
+```bash
+php bin/console database:enable_timezones
+```
 Obs: en este caso el comando debe ejecutarce dentro de la carpeta /var/www/html/public
 
 ![image](https://github.com/MerlinXzt/glpi10.0.7-mariadb-docker-compose/assets/54214007/0d985283-7629-4d8c-a6b5-2766cce4898d)
