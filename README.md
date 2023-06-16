@@ -78,3 +78,4 @@ Obs: en este caso el comando debe ejecutarce dentro de la carpeta /var/www/html/
 
 ![image](https://github.com/MerlinXzt/glpi10.0.7-mariadb-docker-compose/assets/54214007/0d985283-7629-4d8c-a6b5-2766cce4898d)
 
+![image](https://github.com/MerlinXzt/glpi10.0.7-mariadb-docker-compose/assets/54214007/782937d9-4790-40e6-9fce-60fa4f211fab)
