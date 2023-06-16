@@ -26,9 +26,9 @@ cd <DIRECTORIO_DEL_REPOSITORIO>
 3. Abre el archivo `docker-compose.yml` y ajusta las variables de entorno según tus necesidades. Puedes cambiar el nombre de la base de datos, el usuario, la contraseña, etc.
 
 4. Ejecuta el siguiente comando para iniciar los contenedores de Docker:
-
+```
 docker-compose up -d
-
+```
 
 Esto creará y ejecutará los contenedores de Docker necesarios para GLPI y la base de datos asociada.
 
