@@ -15,7 +15,7 @@ Asegúrate de tener instalado Docker y Docker Compose en tu sistema antes de con
 
 1. Clona este repositorio en tu máquina local:
 
-git clone
+git clone https://github.com/MerlinXzt/glpi10.0.7-mariadb-docker-compose.git
 
 
 2. Navega hasta el directorio clonado:
