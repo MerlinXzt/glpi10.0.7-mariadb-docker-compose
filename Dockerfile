@@ -50,7 +50,7 @@ RUN apt-get update && apt-get install -y mariadb-client
 RUN echo "session.cookie_httponly = On" >> /usr/local/etc/php/conf.d/security.ini
 
 # Descarga y descomprime GLPI
-RUN curl -L -o glpi.tar.gz https://github.com/glpi-project/glpi/releases/download/10.0.7/glpi-10.0.7.tgz && \
+RUN curl -L -o glpi.tar.gz https://github.com/glpi-project/glpi/releases/download/10.0.15/glpi-10.0.15.tgz && \
     tar -xvzf glpi.tar.gz && \
     rm glpi.tar.gz && \
     mkdir -p /var/www/html/public && \
